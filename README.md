@@ -1,6 +1,6 @@
 # Inspire-a-task
 
-A motivational task management applicatio
+A motivational task management application
 
 ## Description
 
