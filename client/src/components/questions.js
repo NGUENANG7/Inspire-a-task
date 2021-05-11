@@ -6,23 +6,13 @@ const questions = [
     },
     {
         type: 'input',
-        message: 'What is your location?',
-        name: 'location',
+        message: 'What reward would you like for completing your task?',
+        name: 'reward',
     },
     {
         type: 'input',
-        message: 'What is your favorite hobby?',
-        name: 'hobby',
-    },
-    {
-        type: 'input',
-        message: 'What is your Github username?',
-        name: 'github',
-    },
-    {
-        type: 'input',
-        message: 'What is your LinkedIn URL?',
-        name: 'linkedin',
+        message: 'What task will you work on for this session?',
+        name: 'task',
     },
 ];
 
