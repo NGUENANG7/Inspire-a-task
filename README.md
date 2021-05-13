@@ -1,42 +1,29 @@
-# Inspire-a-task
+# Create React Express App
 
-A motivational task management application
+## About This Boilerplate
 
-## Description
+This setup allows for a Node/Express/React app which can be easily deployed to Heroku.
 
-A motivational task management application. This application assist those who know what they should be accomplishing but lack the motivation to complete the task at hand. This app is part motivational guru, part social media influencer, and part task-management application.
+The front-end React app will auto-reload as it's updated via webpack dev server, and the backend Express app will auto-reload independently with nodemon.
 
-## Table of Contents (Optional)
+## Starting the app locally
 
-If your README is very long, add a table of contents to make it easy for users to find what they need.
+Start by installing front and backend dependencies. While in this directory, run the following command:
 
-- [Installation](#installation)
-- [Usage](#usage)
-- [Credits](#credits)
-- [License](#license)
+```
+npm install
+```
 
-## Installation
+This should install node modules within the server and the client folder.
 
-This application utilizes a MERN stack and will be deployed to Heroku
+After both installations complete, run the following command in your terminal:
 
-## Usage
+```
+npm start
+```
 
-AS A USER WHO HAS LACKS MOTIVATION BUT HAS MANY TASKS TO ACCOMPLISH
+Your app should now be running on <http://localhost:3000>. The Express server should intercept any AJAX requests from the client.
 
-I WANT A SYSTEM TO ORGANIZE MY TASKS THAT WILL ALSO MOTIVATE AND UPLIFT ME
+## Deployment (Heroku)
 
-This application will solve the problems for these individuals. At points of accomplishment (25% or 50%) the user will rewarded with motivational or uplifting quotes. This will assist with productivity and morale.
-
-## License
-
----
-
-## Badges
-
-![badmath](https://img.shields.io/github/languages/top/nielsenjared/badmath)
-
-Badges aren't _necessary_, per se, but they demonstrate street cred. Badges let other developers know that you know what you're doing. Check out the badges hosted by [shields.io](https://shields.io/). You may not understand what they all represent now, but you will in time.
-
-## Features
-
-TBD - We are thinking of incorporating a quote API and some possible NPM packages to help with the scheduling components.
+To deploy, simply add and commit your changes, and push to Heroku. As is, the NPM scripts should take care of the rest.
