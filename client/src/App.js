@@ -1,10 +1,20 @@
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { Main } from './layouts/Main';
+import { TaskPage, FrontPage } from '../src/pages';
+
+// import { Photo } from './pages/Photo';
 import './App.css';
 
 function App() {
   return (
-    <div className="font-mono bg-gradient-to-r from-green-400 to-blue-500 text-2xl">
-      This thing is working{' '}
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route element={<Main />}>
+          <Route path="/" element={<FrontPage />} />
+          <Route path="/TaskPage" element={<TaskPage />} />
+        </Route>
+      </Routes>
+    </BrowserRouter>
   );
 }
 
