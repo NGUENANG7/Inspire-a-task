@@ -10,7 +10,6 @@ var User = new mongoose.Schema({
       id: Int,
     },
   ],
-  reward:
 });
 
 //auto icrment task id
