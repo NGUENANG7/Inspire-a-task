@@ -17,11 +17,7 @@ export const Header = () => {
         <Link to="/TaskPage">
           <span className="lead">| ??</span>
         </Link>
-        <Link to="/TodoList">
-          <span className="lead">|| ??</span>
-        </Link>
         
-
   <div>  <LoginButton/>  <LogoutButton/>   </div>
     </div>
   
