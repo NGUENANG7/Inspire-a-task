@@ -4,7 +4,7 @@ import LogoutButton from './LogoutBtn'
 
 export const Header = () => {
   return (
-   
+  
     <div className=" text-center m-4">
       {' '}
       <h1 className=" display-2"> Inspire a Task</h1>{' '}

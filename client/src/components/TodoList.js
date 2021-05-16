@@ -4,7 +4,7 @@ import React, {
 import TodoForm from './TodoForm';
 import Todo from './Todo';
 
-function TodoList() {
+export const TodoList = () => {
     const [todos, setTodos] = useState([]);
 
     const addTodo = todo => {
