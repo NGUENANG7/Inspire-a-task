@@ -12,12 +12,12 @@ export const Header = () => {
       
         {' '}
         <Link to="/">
-          <span className="lead">Your tasklist awaits |</span>
+          <span className="lead">Home</span>
         </Link>
         <Link to="/TaskPage">
-          <span className="lead">| ??</span>
+          <span className="lead"> || Task Page</span>
         </Link>
-        
+
   <div>  <LoginButton/>  <LogoutButton/>   </div>
     </div>
   
