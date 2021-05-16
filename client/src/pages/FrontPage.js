@@ -1,3 +1,3 @@
 export const FrontPage = () => {
-  return <div>This is a front page</div>;
+  return <div>This is a front page.</div>
 };
