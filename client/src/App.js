@@ -3,9 +3,9 @@ import { Main } from './layouts/Main';
 import { TaskPage, FrontPage } from '../src/pages';
 import { Auth0Provider } from '@auth0/auth0-react';
 import { useAuth0 } from '@auth0/auth0-react';
+import Reward from './pages/Reward';
 
 // import { Photo } from './pages/Photo';
-import './App.css';
 
 function App() {
   const { user, isAuthenticated, isLoading } = useAuth0();
@@ -26,8 +26,8 @@ function App() {
         <Routes>
           <Route element={<Main />}>
             <Route path="/" element={<FrontPage />} />
-
             <Route path="/TaskPage" element={<TaskPage />} />
+            <Route path="/Reward" element={<Reward />} />
           </Route>
         </Routes>
       </BrowserRouter>

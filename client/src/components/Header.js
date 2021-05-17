@@ -4,7 +4,7 @@ import LogoutButton from './LogoutBtn'
 
 export const Header = () => {
   return (
-   
+  
     <div className=" text-center m-4">
       {' '}
       <h1 className=" display-2"> Inspire a Task</h1>{' '}
@@ -12,12 +12,14 @@ export const Header = () => {
       
         {' '}
         <Link to="/">
-          <span className="lead">Your tasklist awaits |</span>
+          <span className="lead">Home</span>
         </Link>
         <Link to="/TaskPage">
-          <span className="lead">| ??</span>
+          <span className="lead"> || Task Page</span>
         </Link>
-        
+        <Link to="/Reward">
+          <span className="lead"> || Reward Page</span>
+        </Link>
 
   <div>  <LoginButton/>  <LogoutButton/>   </div>
     </div>
