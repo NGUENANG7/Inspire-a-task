@@ -1,18 +1,23 @@
 var mongoose = require('mongoose');
 
-var User = new mongoose.Schema({
+var UserSchema = new mongoose.Schema({
   name: String,
   email: String,
   tasks: [
     {
       text: String,
-      completed: Boolean,
-      id: Int,
+      isComplete: Boolean,
+      id: Number,
     },
   ],
-  reward:String,
+  rewards: [
+    {
+      text: String,
+      duration: Number,
+    },
+  ],
 });
 
-const userModel = mongoose.model("user", userSchema) // creating the model from the schema
+const userModel = mongoose.model('user', UserSchema); // creating the model from the schema
 
-module.exports = userModel // exporting the model
+module.exports = userModel; // exporting the model
