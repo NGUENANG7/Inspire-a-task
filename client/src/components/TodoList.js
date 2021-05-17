@@ -3,6 +3,7 @@ import React, {
 } from 'react';
 import TodoForm from './TodoForm';
 import Todo from './Todo';
+import '../App.css';
 
 export const TodoList = () => {
     const [todos, setTodos] = useState([]);
