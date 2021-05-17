@@ -1,9 +1,6 @@
 import { useAuth0 } from '@auth0/auth0-react';
 import { useNavigate } from 'react-router-dom';
 import {TodoList} from '../components/TodoList';
-import {Todo} from '../components/Todo'
-import {TodoForm} from '../components/TodoForm'
-
 
 export const TaskPage = () => {
   const { user, isAuthenticated, isLoading } = useAuth0();

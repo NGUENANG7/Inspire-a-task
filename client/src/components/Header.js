@@ -17,6 +17,9 @@ export const Header = () => {
         <Link to="/TaskPage">
           <span className="lead"> || Task Page</span>
         </Link>
+        <Link to="/Reward">
+          <span className="lead"> || Reward Page</span>
+        </Link>
 
   <div>  <LoginButton/>  <LogoutButton/>   </div>
     </div>
