@@ -11,11 +11,11 @@ export const TodoList = () => {
 
   useEffect(() => {
     console.log('FIRST TIME ONLY get notes from DB');
-    Axios.get('http://localhost:8080/tasks').then(function (userData) {
+    Axios.post('/get-tasks', user).then(function (userData) {
       console.log('USER FROM DB!!!', userData);
       setTodos(userData.data?.tasks || []);
     });
-  }, []);
+  }, [user]);
 
   useEffect(() => {
     if (todos.length > 0) {
@@ -23,10 +23,9 @@ export const TodoList = () => {
       var sendToBackedn = {
         todos: todos,
         userName: user.given_name,
+        email: user.email,
       };
-      Axios.post('http://localhost:8080/tasks', sendToBackedn).then(function (
-        data
-      ) {
+      Axios.post('/tasks', sendToBackedn).then(function (data) {
         console.log('we got this back from the BE', data);
       });
     }
