@@ -13,7 +13,7 @@ export const TodoList = () => {
     console.log('FIRST TIME ONLY get notes from DB');
     Axios.get('http://localhost:8080/tasks').then(function (userData) {
       console.log('USER FROM DB!!!', userData);
-      setTodos(userData.data.tasks);
+      setTodos(userData.data?.tasks || []);
     });
   }, []);
 
@@ -24,7 +24,9 @@ export const TodoList = () => {
         todos: todos,
         userName: user.given_name,
       };
-      Axios.post('http://localhost:8080/tasks', sendToBackedn).then(function (data) {
+      Axios.post('http://localhost:8080/tasks', sendToBackedn).then(function (
+        data
+      ) {
         console.log('we got this back from the BE', data);
       });
     }

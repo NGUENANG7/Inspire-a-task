@@ -13,7 +13,7 @@ function success(res, payload) {
 module.exports = function (app) {
   app.get('/tasks', async (req, res, next) => {
     try {
-      const singleUser = await userModel.findOne({ name: 'Jasmine' });
+      const singleUser = await userModel.findOne({ name: req.body.userName });
       res.json(singleUser);
       // return success(res, tasks);
     } catch (err) {
@@ -25,8 +25,8 @@ module.exports = function (app) {
     console.log('We his the task route!!', req.body);
     try {
       await userModel.updateOne(
-        // { name: req.body.userName },
-        { name: 'Jasmine' },
+        { name: req.body.userName },
+        // { name: 'Jasmine' },
         {
           tasks: req.body.todos,
         }
