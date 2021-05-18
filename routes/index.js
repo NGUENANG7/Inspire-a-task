@@ -11,12 +11,27 @@ function success(res, payload) {
 }
 
 module.exports = function (app) {
-  app.get('/tasks', async (req, res, next) => {
+  app.post('/get-tasks', async (req, res, next) => {
+    console.log('req.', req.body);
     try {
-      const singleUser = await userModel.findOne({ name: 'Jasmine' });
-      res.json(singleUser);
+      let newUser;
+      const singleUser = await userModel.findOne({
+        name: req.body.given_name,
+        email: req.body.email,
+      });
+      if (!singleUser) {
+        newUser = new userModel({
+          name: req.body.given_name,
+          email: req.body.email,
+        });
+        newUser.save();
+      }
+      console.log(singleUser);
+      res.json(singleUser || newUser);
+
       // return success(res, tasks);
     } catch (err) {
+      console.log(err);
       next({ status: 400, message: 'failed to get tasks' });
     }
   });
@@ -25,8 +40,8 @@ module.exports = function (app) {
     console.log('We his the task route!!', req.body);
     try {
       await userModel.updateOne(
-        // { name: req.body.userName },
-        { name: 'Jasmine' },
+        { name: req.body.userName },
+        // { name: 'Jasmine' },
         {
           tasks: req.body.todos,
         }
@@ -35,6 +50,7 @@ module.exports = function (app) {
       // const task = await db.task.create(req.body);
       // return success(res, task);
     } catch (err) {
+      console.log(err);
       next({ status: 400, message: 'failed to create task' });
     }
   });
@@ -46,6 +62,7 @@ module.exports = function (app) {
       });
       return success(res, task);
     } catch (err) {
+      console.log(err);
       next({ status: 400, message: 'failed to update task' });
     }
   });
@@ -54,6 +71,7 @@ module.exports = function (app) {
       await db.task.findByIdAndRemove(req.params.id);
       return success(res, 'task deleted!');
     } catch (err) {
+      console.log(err);
       next({ status: 400, message: 'failed to delete task' });
     }
   });
