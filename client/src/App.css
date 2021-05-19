@@ -145,3 +145,22 @@ h1 {
 .edit-icon {
   color: #fff;
 }
+
+.reward-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  width: 500px;
+  min-height: 500px;
+  background: black;
+  text-align: center;
+  margin: 128px auto;
+  border-radius: 10px;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 4px auto;
+  color: #fff;
+}
