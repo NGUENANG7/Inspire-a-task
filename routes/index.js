@@ -76,12 +76,12 @@ module.exports = function (app) {
     }
   });
 
-  app.use((err, req, res, next) => {
-    return res.status(err.status || 400).json({
-      status: err.status || 400,
-      message: err.message || 'there was an error processing request',
-    });
-  });
+  // app.use((err, req, res, next) => {
+  //   return res.status(err.status || 400).json({
+  //     status: err.status || 400,
+  //     message: err.message || 'there was an error processing request',
+  //   });
+  // });
 };
 
 // app.listen(PORT, () => {
