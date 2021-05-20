@@ -9,7 +9,7 @@ export const Reward = () => {
   // const navigate = useNavigate();
   if (isLoading === false && isAuthenticated === false) {
     return (
-      <div className="3xl font-mono">
+      <div className="m-3 text-center text-3xl font-mono">
         {' '}
         Please press the login button above to login
       </div>

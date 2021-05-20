@@ -1,10 +1,10 @@
 import { useAuth0 } from '@auth0/auth0-react';
-import { useNavigate } from 'react-router-dom';
+// import { useNavigate } from 'react-router-dom';
 import { TodoList } from '../components/TodoList';
 
 export const TaskPage = () => {
   const { user, isAuthenticated, isLoading } = useAuth0();
-  const navigate = useNavigate();
+  // const navigate = useNavigate();
 
   console.log('TASK PAGE AUTH', isAuthenticated);
   console.log('USER!!!!!', user);
@@ -14,7 +14,13 @@ export const TaskPage = () => {
   }
 
   if (isLoading === false && isAuthenticated === false) {
-    navigate('/');
+    return (
+      <div className="m-3 text-center text-3xl font-mono">
+        {' '}
+        Please press the login button above to login
+      </div>
+    );
+    // navigate('/');
   }
 
   return (
