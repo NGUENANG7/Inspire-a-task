@@ -1,6 +1,6 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import { Main } from './layouts/Main';
-import { TaskPage, FrontPage } from '../src/pages';
+import { TaskPage, FrontPage, Profile } from '../src/pages';
 import { Auth0Provider } from '@auth0/auth0-react';
 import { useAuth0 } from '@auth0/auth0-react';
 import { Reward } from './pages/Reward';
@@ -28,6 +28,7 @@ function App() {
             <Route path="/" element={<FrontPage />} />
             <Route path="/TaskPage" element={<TaskPage />} />
             <Route path="/Reward" element={<Reward />} />
+            <Route path="/Profile" element={<Profile />} />
           </Route>
         </Routes>
       </BrowserRouter>
