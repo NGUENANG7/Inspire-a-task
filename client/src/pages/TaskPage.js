@@ -10,7 +10,7 @@ export const TaskPage = () => {
   console.log('USER!!!!!', user);
 
   if (isLoading) {
-    return <div> Loadinggg....</div>;
+    return <div> Loading... </div>;
   }
 
   if (isLoading === false && isAuthenticated === false) {
@@ -18,8 +18,10 @@ export const TaskPage = () => {
   }
 
   return (
-    <div className="bg-gradient-to-r from-purple-400 via-pink-500 to-red-500 text-dark drop-shadow-lg text-2xl todo-app">
-      <TodoList />
-    </div>
+    isAuthenticated && (
+      <div className="bg-gradient-to-r from-purple-400 via-pink-500 to-red-500 text-dark drop-shadow-lg text-2xl todo-app">
+        <TodoList />
+      </div>
+    )
   );
 };
