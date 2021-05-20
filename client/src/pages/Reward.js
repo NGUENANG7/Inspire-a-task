@@ -36,7 +36,9 @@ export const Reward = () => {
         </button>
         <span>|| </span>
         <button class="reward-button bg-purple-600 hover:bg-blue-700 text-white font-bold py-2 px-4 border border-blue-700 rounded">
-          Insert your own link!
+        <a href="https://www.tiktok.com/" target="_blank">
+          TikTok
+          </a>
         </button>
       </div>
       <h1>Task CountDown - You have a 10 minute break</h1>
