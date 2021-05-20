@@ -12,12 +12,15 @@ if (process.env.NODE_ENV === 'production') {
 }
 
 const mongoose = require('mongoose');
-mongoose.connect('mongodb://127.0.0.1:27017/taskapp', {
-  // connecting to the mongodb database name: "task-app" locally
-  keepAlive: true, // keeping the connection alive
-  useNewUrlParser: true,
-  useUnifiedTopology: true,
-});
+mongoose.connect(
+  process.env.MONGODB_URI || 'mongodb://127.0.0.1:27017/taskapp',
+  {
+    // connecting to the mongodb database name: "task-app" locally
+    keepAlive: true, // keeping the connection alive
+    useNewUrlParser: true,
+    useUnifiedTopology: true,
+  }
+);
 mongoose.set('debug', true); // enabling debugging information to be printed to the console for debugging purposes
 // mongoose.Promise = Promise; // setting mongoose's Promise to use Node's Promise
 
@@ -54,6 +57,7 @@ require('./routes/index.js')(app);
 // Send every other request to the React app
 // Define any API routes before this runs
 app.get('*', (req, res) => {
+  console.log('test - HELLO World');
   res.sendFile(path.join(__dirname, './client/build/index.html'));
 });
 
