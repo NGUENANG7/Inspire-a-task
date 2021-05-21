@@ -1,6 +1,6 @@
 import { useAuth0 } from '@auth0/auth0-react';
 // import { useNavigate } from 'react-router-dom';
-import { TodoList } from '../components/TodoList';
+import { TodoList, Profile } from '../components';
 
 export const TaskPage = () => {
   const { user, isAuthenticated, isLoading } = useAuth0();
@@ -25,9 +25,12 @@ export const TaskPage = () => {
 
   return (
     isAuthenticated && (
-      <div className="bg-gradient-to-r from-purple-400 via-pink-500 to-red-500 text-dark drop-shadow-lg text-2xl todo-app">
-        <TodoList />
-      </div>
+      <>
+        <Profile />
+        <div className="bg-gradient-to-r from-purple-400 via-pink-500 to-red-500 text-dark drop-shadow-lg text-2xl todo-app">
+          <TodoList />
+        </div>
+      </>
     )
   );
 };

@@ -6,26 +6,39 @@ export const Header = () => {
   return (
     <div className=" text-center m-4">
       {' '}
-      <h1 className="border-8 border-fuchsia-600 m-3 text-center text-8xl">
-        {' '}
-        Inspire-A-Task
-      </h1>{' '}
-      <p className="display-4">The microtask app that inspires all</p>{' '}
-      <Link to="/">
-        <span className="lead">Home</span>
-      </Link>
-      <Link to="/TaskPage">
-        <span className="lead"> || Task Page</span>
-      </Link>
-      <Link to="/Reward">
-        <span className="lead"> || Reward Page</span>
-      </Link>
-      {/* <Link to="/Profile">
+      <div className="border-8 border-fuchsia-600 m-2 ">
+        <h1 className="m-3 p-4 text-center text-8xl"> Inspire-A-Task</h1>{' '}
+      </div>
+      <p className="text-lg">The microtask app that inspires all</p>{' '}
+      <div className="min-w-full">
+        <Link
+          to="/"
+          className="transform hover:scale-300 hover:bg-purple-700 hover:text-white"
+        >
+          <span>Home</span>
+        </Link>
+        <Link
+          to="/TaskPage"
+          className="transform hover:scale-300 hover:bg-purple-700 hover:text-white"
+        >
+          <span> | Task Page</span>
+        </Link>
+        <Link
+          to="/Reward"
+          className="transform hover:scale-300 hover:bg-purple-700 hover:text-white"
+        >
+          <span> | Reward Page</span>
+        </Link>
+        {/* <Link to="/Profile">
         <span className="lead"> || Profile Page</span>
       </Link> */}
-      <div>
-        {' '}
-        <LoginButton /> <LogoutButton />{' '}
+        <div className="transform hover:scale-300 hover:bg-purple-700 hover:text-white">
+          {' '}
+          <LoginButton></LoginButton>
+        </div>
+        <div className="transform hover:scale-300 hover:bg-purple-700 hover:text-white">
+          <LogoutButton></LogoutButton>
+        </div>
       </div>
     </div>
   );

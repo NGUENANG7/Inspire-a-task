@@ -58,7 +58,7 @@ export const Timer = () => {
           renderTime('hours', getTimeHours(daySeconds - elapsedTime))
         }
       </CountdownCircleTimer> */}
-      <div className="inline">
+      <div className="inline-block">
         <CountdownCircleTimer
           {...timerProps}
           colors={[['#EF798A']]}
@@ -73,7 +73,7 @@ export const Timer = () => {
           }
         </CountdownCircleTimer>
       </div>
-      <div className="inline">
+      <div className="inline-block">
         <CountdownCircleTimer
           {...timerProps}
           colors={[['#218380']]}
