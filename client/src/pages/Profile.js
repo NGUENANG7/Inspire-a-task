@@ -1,9 +1,14 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { useAuth0 } from '@auth0/auth0-react';
 // import { useNavigate } from 'react-router-dom';
 
 export const Profile = () => {
   const { user, isAuthenticated, isLoading } = useAuth0();
+  const [goal, setGoal] = useState('');
+  const onSubmit = (e) => {
+    e.preventDefault();
+    console.log(goal);
+  };
   //   const navigate = useNavigate();
 
   if (isLoading) {
@@ -31,15 +36,24 @@ export const Profile = () => {
         <div className="text-center">
           <div className="text-mono text-3xl">
             {' '}
-            How many tasks would you like to complete before your reward?
+            <p>How many tasks would you like to complete before your reward?</p>
+            <p>Your current goal is: {goal}</p>
           </div>
           <div>
-            <form className="m-4 flex-center">
+            <form className="m-4 flex-center" onSubmit={onSubmit}>
               <input
                 className="rounded-l-lg p-4 border-t mr-0 border-b border-l text-gray-800 border-gray-200 bg-white"
                 placeholder="Your Task Goal"
+                type="number"
+                value={goal}
+                onChange={(e) => {
+                  setGoal(e.target.value);
+                }}
               />
-              <button className="px-8 rounded-r-lg bg-indigo-400  text-gray-800 font-bold p-4 uppercase border-yellow-500 border-t border-b border-r">
+              <button
+                className="px-8 rounded-r-lg bg-indigo-400  text-gray-800 font-bold p-4 uppercase border-yellow-500 border-t border-b border-r"
+                type="submit"
+              >
                 Set Goal
               </button>
             </form>
