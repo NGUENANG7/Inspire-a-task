@@ -9,7 +9,7 @@ export const Main = (props) => {
           <Header />
         </div>
         <div>
-          <Outlet />;
+          <Outlet />
         </div>
       </div>
     </>
