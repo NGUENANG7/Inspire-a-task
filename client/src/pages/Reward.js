@@ -14,7 +14,7 @@ export const Reward = () => {
         Please press the login button above to login.
       </div>
     );
-    // navigate('/');
+
   }
   if (isLoading) {
     return <div>Loading ...</div>;
@@ -76,3 +76,4 @@ export const Reward = () => {
     )
   );
 };
+
