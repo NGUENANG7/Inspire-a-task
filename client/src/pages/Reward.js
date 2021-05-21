@@ -39,6 +39,11 @@ export const Reward = () => {
                 target="_blank"
                 rel="noreferrer"
               >
+                <img
+                  className="max-h-20"
+                  src="https://project2ejmq.s3.us-east-2.amazonaws.com/images/youtube.png"
+                  alt="YouTube logo"
+                ></img>
                 Youtube
               </a>
             </button>{' '}
@@ -49,6 +54,11 @@ export const Reward = () => {
                 target="_blank"
                 rel="noreferrer"
               >
+                <img
+                  className="max-h-20"
+                  src="https://project2ejmq.s3.us-east-2.amazonaws.com/images/facebook.png"
+                  alt="Facebook Icon"
+                ></img>
                 Facebook
               </a>
             </button>{' '}
@@ -59,6 +69,11 @@ export const Reward = () => {
                 target="_blank"
                 rel="noreferrer"
               >
+                <img
+                  className="max-h-20"
+                  src="https://project2ejmq.s3.us-east-2.amazonaws.com/images/instagram.png"
+                  alt="Instagram Icon"
+                ></img>
                 Instagram
               </a>
             </button>{' '}
@@ -69,6 +84,11 @@ export const Reward = () => {
                 target="_blank"
                 rel="noreferrer"
               >
+                <img
+                  className="max-h-20"
+                  src="https://project2ejmq.s3.us-east-2.amazonaws.com/images/twitter.png"
+                  alt="Twitter Icon"
+                ></img>
                 Twitter
               </a>
             </button>{' '}
@@ -79,6 +99,11 @@ export const Reward = () => {
                 target="_blank"
                 rel="noreferrer"
               >
+                <img
+                  className="max-h-20"
+                  src="https://project2ejmq.s3.us-east-2.amazonaws.com/images/discord.png"
+                  alt="Discord"
+                ></img>
                 Discord
               </a>
             </button>
@@ -89,6 +114,11 @@ export const Reward = () => {
                 target="_blank"
                 rel="noreferrer"
               >
+                <img
+                  className="max-h-20"
+                  src="https://project2ejmq.s3.us-east-2.amazonaws.com/images/tiktok.png"
+                  alt="TikTok Icon"
+                ></img>
                 TikTok
               </a>
             </button>
