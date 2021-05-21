@@ -20,9 +20,9 @@ export const Header = () => {
       <Link to="/Reward">
         <span className="lead"> || Reward Page</span>
       </Link>
-      <Link to="/Profile">
+      {/* <Link to="/Profile">
         <span className="lead"> || Profile Page</span>
-      </Link>
+      </Link> */}
       <div>
         {' '}
         <LoginButton /> <LogoutButton />{' '}

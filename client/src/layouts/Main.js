@@ -1,5 +1,5 @@
 import { Outlet } from 'react-router';
-import { Header } from '../components';
+import { Header, Profile } from '../components';
 
 export const Main = (props) => {
   return (
@@ -7,6 +7,9 @@ export const Main = (props) => {
       <div>
         <div>
           <Header />
+        </div>
+        <div>
+          <Profile />
         </div>
         <div>
           <Outlet />
