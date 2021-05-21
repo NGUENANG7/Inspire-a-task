@@ -74,10 +74,15 @@ export const TodoList = () => {
   return (
     <>
       <h1> What inspired tasks will complete today ?</h1>{' '}
-      <p className="m-1 font-mono">Task Goal for today: </p>
+      <p className="m-1 font-mono">
+        Task Goal for today:{' '}
+        <span className="text-purple-600">
+          {JSON.parse(localStorage.getItem('goalNumber'))}
+        </span>
+      </p>
       <p className="mt-1">Click on your task to mark it as completed!</p>
       <p className="mb-1 text-base text-red-400">
-        Hint: You may set your goal on the profile page{' '}
+        Hint: You may set your goal above by hitting the set goal button{' '}
       </p>
       <p className="mb-4 mt-1 p-2">
         {' '}

@@ -1,10 +1,11 @@
 import React, { useState } from 'react';
 import { useAuth0 } from '@auth0/auth0-react';
 // import { useNavigate } from 'react-router-dom';
+import useLocalStorage from '../hooks/useLocalStorage';
 
 export const Profile = () => {
   const { user, isAuthenticated, isLoading } = useAuth0();
-  const [goal, setGoal] = useState('');
+  const [goal, setGoal] = useLocalStorage('goalNumber', '');
   const onSubmit = (e) => {
     e.preventDefault();
     console.log(goal);
