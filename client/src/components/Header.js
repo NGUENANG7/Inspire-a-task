@@ -8,7 +8,7 @@ export const Header = () => {
       {' '}
       <h1 className="border-8 border-fuchsia-600 m-3 text-center text-8xl">
         {' '}
-        Inspire a Task
+        Inspire-A-Task
       </h1>{' '}
       <p className="display-4">The microtask app that inspires all</p>{' '}
       <Link to="/">
