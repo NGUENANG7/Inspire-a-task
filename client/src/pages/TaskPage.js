@@ -17,7 +17,7 @@ export const TaskPage = () => {
     return (
       <div className="m-3 text-center text-3xl font-mono">
         {' '}
-        Please press the login button above to login
+        Please press the login button above to login.
       </div>
     );
     // navigate('/');
