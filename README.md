@@ -4,8 +4,8 @@
 
 ## Table of Content
 * [Objective](#objective)
-* [Deployed Link](#deployed link)
-* [Getting Started](#getting started)
+* [Deployed Link](#deployed-link)
+* [Getting Started](#getting-started)
 * [Demo Images](#demo-images)
 * [Technologies](#technologies)
 * [Authors](#authors)
