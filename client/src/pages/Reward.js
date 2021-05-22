@@ -2,11 +2,10 @@ import React from 'react';
 import { Timer } from '../components';
 import { useAuth0 } from '@auth0/auth0-react';
 import '../App.css';
-// import { useNavigate } from 'react-router-dom';
 
 export const Reward = () => {
   const { user, isAuthenticated, isLoading } = useAuth0();
-  // const navigate = useNavigate();
+
   if (isLoading === false && isAuthenticated === false) {
     return (
       <div className="m-3 text-center text-3xl font-mono">
@@ -14,7 +13,6 @@ export const Reward = () => {
         Please press the login button above to login.
       </div>
     );
-
   }
   if (isLoading) {
     return <div>Loading ...</div>;
@@ -128,4 +126,3 @@ export const Reward = () => {
     )
   );
 };
-

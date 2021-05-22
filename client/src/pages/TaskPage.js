@@ -1,13 +1,9 @@
 import { useAuth0 } from '@auth0/auth0-react';
-// import { useNavigate } from 'react-router-dom';
+
 import { TodoList, Profile } from '../components';
 
 export const TaskPage = () => {
   const { user, isAuthenticated, isLoading } = useAuth0();
-  // const navigate = useNavigate();
-
-  console.log('TASK PAGE AUTH', isAuthenticated);
-  console.log('USER!!!!!', user);
 
   if (isLoading) {
     return <div> Loading... </div>;

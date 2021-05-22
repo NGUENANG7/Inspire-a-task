@@ -28,7 +28,6 @@ function App() {
             <Route path="/" element={<FrontPage />} />
             <Route path="/TaskPage" element={<TaskPage />} />
             <Route path="/Reward" element={<Reward />} />
-            {/* <Route path="/Profile" element={<Profile />} /> */}
           </Route>
         </Routes>
       </BrowserRouter>
