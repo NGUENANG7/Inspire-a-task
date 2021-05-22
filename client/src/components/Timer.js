@@ -39,10 +39,6 @@ export const Timer = () => {
         colors={[['#7E2E84']]}
         duration={daysDuration}
         initialRemainingTime={remainingTime}
-      >
-        {({ elapsedTime }) =>
-          renderTime('days', getTimeDays(daysDuration - elapsedTime))
-        }
       </CountdownCircleTimer>
       <CountdownCircleTimer
         {...timerProps}
