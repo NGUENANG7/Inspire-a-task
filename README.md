@@ -65,7 +65,6 @@ npm start
 * [React-Color](https://casesandberg.github.io/react-color/)
 
 
-
 ## Authors
 
 ### [Jasmine James](https://github.com/jasdjames)
