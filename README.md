@@ -75,7 +75,7 @@ npm start
 - email: jasdjames@gmail.com
 
 ### [Gregory Nguenang](https://github.com/NGUENANG7)
-- [LinkedIn](https://www.linkedin.com/in/Gregory Nguenang/)
+- [LinkedIn](https://www.linkedin.com/in/regory-nguenang/)
 - [Portfolio](https://fierce-harbor-88005.herokuapp.com/)
 - [Highlighted-Work](https://q-jones92.github.io/Style-With-My-Weather-App/)
 - email: njethur@gmail.com
