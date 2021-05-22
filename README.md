@@ -85,7 +85,7 @@ npm start
 - [LinkedIn](https://www.linkedin.com/in/joyumoekpo/)
 - [Portfolio](https://joyumoekpo.github.io/portfolio.html)
 - [Highlighted-Work](https://joys-tech-blog.herokuapp.com/)
-- email:
+- email: joyumoekpo1@gmail.com
 
 ## Resources
 
