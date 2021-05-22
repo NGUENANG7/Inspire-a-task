@@ -17,7 +17,7 @@ Welcome to Inspire-A-Task! This is a microtask app that allows you to create a t
 
 ## Deployed Link
 
-* [chore-hack.herokuapp.com](https://chore-hack.herokuapp.com/)
+* [chore-hack.herokuapp.com]()
 
 ## Getting Started
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
