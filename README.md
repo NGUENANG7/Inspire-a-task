@@ -45,10 +45,10 @@ npm start
 
 ## Demo Images
 
-![screenshot](images/image1.png) 
-![screenshot](images/image2.png) 
-![screenshot](images/image3.png) 
-![screenshot](images/image4.png) 
+![screenshot](Images/image1.png) 
+![screenshot](Images/image2.png) 
+![screenshot](Images/image3.png) 
+![screenshot](Images/image4.png) 
 
 
 ## Technologies
