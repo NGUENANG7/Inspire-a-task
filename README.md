@@ -82,9 +82,9 @@ npm start
 
 ### [Joy Umoekpo](https://github.com/JoyUmoekpo)
 
-- [LinkedIn](linkedin.com/in/)
-- [Portfolio]()
-- [Highlighted-Work]()
+- [LinkedIn](https://www.linkedin.com/in/joyumoekpo/)
+- [Portfolio](https://joyumoekpo.github.io/portfolio.html)
+- [Highlighted-Work](https://joys-tech-blog.herokuapp.com/)
 - email:
 
 ## Resources
